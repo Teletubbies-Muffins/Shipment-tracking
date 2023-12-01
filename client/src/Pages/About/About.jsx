@@ -8,7 +8,7 @@ import f from "../../Images/facebook.png";
 
 function About() {
   return (
-    <>
+    <div className="about-page">
       <Navbar />
       <div>
         <h1>ABOUT US</h1>
@@ -32,7 +32,7 @@ function About() {
 
 
       </div>
-    </>
+    </div>
   );
 }
 

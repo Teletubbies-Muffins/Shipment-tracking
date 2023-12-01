@@ -1,4 +1,4 @@
-* {
+.nav-bar {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -6,8 +6,8 @@
   
 }
 
-li,
-a,
+.nav-bar li,
+.nav-bar a,
 .cta {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -15,7 +15,7 @@ a,
   color: white;
   text-decoration: none;
 }
-header {
+.nav-bar header {
   display: flex;
   justify-content: space-between;
   align-items: center;

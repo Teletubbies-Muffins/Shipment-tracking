@@ -1,15 +1,15 @@
-h1{
+.about-page h1{
   margin-top: 30px;
   font-family: "lucida console", monospace;
   color:rgb(79, 75, 75);
 }
 
-div{
+/* div{
   background-color: rgb(222, 217, 217) ;
   height:700px;
-}
+} */
 
-p{
+.about-page p{
 margin-right: 100px;
 margin-left: 100px;
 margin-top: 50px;
@@ -18,7 +18,7 @@ font-family: "monaco", monospace;
 font-weight: bold;
 }
 
-img{
+.about-page img{
   height:50px;
   margin-top: 20px;
   margin-right: 20px;
@@ -29,7 +29,7 @@ img{
   
 }
 
-img:hover{
+.about-page img:hover{
   transform:scale(1.2);
 
 }
