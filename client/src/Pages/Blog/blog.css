@@ -1,0 +1,60 @@
+h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h1{
+    color:rgb(184, 42, 42);
+}
+
+
+textarea{
+position: absolute;
+width:1000px;
+top: 580px;
+left: 150px;
+padding-top: 10px;
+
+}
+
+.btnC{
+    position: absolute;
+    background-color:rgb(68, 124, 198);
+    border-radius: 10px;
+    color: white;
+    top: 584px;
+    left:1160px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+
+}
+
+.btnC:hover{
+    background-color: rgb(35, 80, 80);
+}
+
+
+.divC{
+   position: relative;
+    background-color: rgb(225, 218, 218);
+    border: 2px solid;
+    width:1000px;
+    height:300px;
+    left:100px;
+    top:95px;
+    text-align: left;
+    
+}
+
+h4{
+    position: absolute;
+    left:10px;
+    top:-32px;
+    z-index: 1;
+}
+
+.spanC{
+    font-size: 9px;
+    background-color: rgba(200, 203, 203, 0.774);
+}
