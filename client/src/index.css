@@ -1,12 +1,11 @@
-
-:root{
-  --white-color:white;
-  --dark-color:#24252a;
+:root {
+  --white-color: white;
+  --dark-color: #24252a;
   --text: #e2eaec;
-  --background: #22092C;
+  --background: #22092c;
   --primary: #872341;
-  --secondary: #BE3144;
-  --accent: #F05941;
+  --secondary: #be3144;
+  --accent: #f05941;
   --border-radius-primary: 20px;
 }
 
@@ -23,13 +22,24 @@ body {
   /* background-color: white; */
 }
 .app {
-  background-image: url(./Images/bg2.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+ 
 
   font-family: "lucida console", monospace;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* here Pages Backgrounds */
+.landing-page{
+  background-image: url(./Images/bg2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sign-up-page {
+  background-image: url(./Images/bg5.svg);
+  background-repeat:no-repeat ;
+  background-size: cover;
 }
