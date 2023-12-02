@@ -1,4 +1,4 @@
-* {
+.nav-bar {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -6,16 +6,22 @@
   
 }
 
+<<<<<<< HEAD
 li,
 a,
 .cta {
+=======
+.nav-bar li,
+.nav-bar a,
+.nav-bar button {
+>>>>>>> a349e37911a3cbbd9616c3af8d1f7d77a5fbfaea
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: white;
   text-decoration: none;
 }
-header {
+.nav-bar header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,7 +56,11 @@ header {
   color: white;
   background-color: #0088a9;
 }
+<<<<<<< HEAD
 .cta {
+=======
+.nav-bar button {
+>>>>>>> a349e37911a3cbbd9616c3af8d1f7d77a5fbfaea
   padding: 9px 25px;
   background-color: rgba(0, 136, 169, 1);
   border: none;
@@ -58,7 +68,11 @@ header {
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
+<<<<<<< HEAD
 .cta:hover {
+=======
+.nav-bar button:hover {
+>>>>>>> a349e37911a3cbbd9616c3af8d1f7d77a5fbfaea
   background-color: rgba(0, 136, 169, 0.8);
 }
 
