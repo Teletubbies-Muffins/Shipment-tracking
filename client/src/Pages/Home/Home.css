@@ -1,0 +1,7 @@
+.app {
+    background-image: url(./Images/bg2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    font-family: "lucida console", monospace;
+  }

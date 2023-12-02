@@ -5,6 +5,7 @@ import Landing from "./Pages/Landing/Landing";
 import About from "./Pages/About/About";
 import SignUp from "./Pages/SignUp/SignUp";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.css";
 function App() {
   return (
     <div className="app">
