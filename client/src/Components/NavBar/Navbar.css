@@ -90,14 +90,10 @@
   color: white;
 }
 
-<<<<<<< HEAD
 .oD:hover .iD{
 margin-left: -14px;
-=======
-.oD:hover .iD {
-  margin-left: -50px;
->>>>>>> 39f7af4b45c16b4084bf4f2907dd6a41a02b68b5
 }
+
 .iD .linksM:hover {
   color: rgb(99, 100, 100);
 }
