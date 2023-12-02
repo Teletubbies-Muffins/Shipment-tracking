@@ -21,7 +21,6 @@ body {
   height: 100%;
   width: 100%;
   /* background-color: white; */
-  background-image: url(./Images/bg.svg);
 }
 .app {
   background-image: url(./Images/bg2.svg);
