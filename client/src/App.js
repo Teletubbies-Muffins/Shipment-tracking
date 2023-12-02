@@ -1,4 +1,3 @@
-
 import Navbar from "./Components/NavBar/Navbar";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
@@ -16,7 +15,6 @@ function App() {
           <Route path="/about" element={<About />}></Route>
         </Routes>
       </BrowserRouter>
-      
     </div>
   );
 }
