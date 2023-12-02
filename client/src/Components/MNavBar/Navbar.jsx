@@ -1,5 +1,5 @@
 import React from 'react'
-import './Navbar.css'
+import './MNavbar.css'
 // import logo from './icon.svg'
 import { Link} from 'react-router-dom';
 //Components import
@@ -45,7 +45,7 @@ greet="Good evening";
  
          
             </nav>
-            <button href="" className='cta'>cta</button>
+            <button href="" className='cta'>C</button>
         </header>
     )
 }

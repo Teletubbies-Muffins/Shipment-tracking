@@ -6,15 +6,9 @@
   
 }
 
-<<<<<<< HEAD
-li,
-a,
-.cta {
-=======
 .nav-bar li,
 .nav-bar a,
 .nav-bar button {
->>>>>>> a349e37911a3cbbd9616c3af8d1f7d77a5fbfaea
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -56,11 +50,7 @@ a,
   color: white;
   background-color: #0088a9;
 }
-<<<<<<< HEAD
-.cta {
-=======
 .nav-bar button {
->>>>>>> a349e37911a3cbbd9616c3af8d1f7d77a5fbfaea
   padding: 9px 25px;
   background-color: rgba(0, 136, 169, 1);
   border: none;
@@ -68,11 +58,7 @@ a,
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-<<<<<<< HEAD
-.cta:hover {
-=======
 .nav-bar button:hover {
->>>>>>> a349e37911a3cbbd9616c3af8d1f7d77a5fbfaea
   background-color: rgba(0, 136, 169, 0.8);
 }
 
