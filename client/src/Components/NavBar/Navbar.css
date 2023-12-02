@@ -83,6 +83,7 @@ font-size: 15px;
   margin-top: 10px;
   margin-left: -500px;
   width: 200px;
+  height:1000px;
   transition: margin-left 2s ease 0s;
   border-radius: 10px;
 z-index: 1
@@ -95,7 +96,7 @@ z-index: 1
 }
 
 .oD:hover .iD{
-margin-left: -50px;
+margin-left: -14px;
 }
 .iD .linksM:hover{
 color:rgb(99, 100, 100);
