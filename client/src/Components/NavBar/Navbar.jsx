@@ -22,7 +22,7 @@ greet="Good evening";
         <header>
                 <div class="oD">
             <img src="icon.svg" alt="logo" className="logo" height={40} />
-            {/* <p>{greet},{props.name}</p> */}
+            <p>{greet},{props.name}</p>
 
             <div class="iD">
 
@@ -45,7 +45,7 @@ greet="Good evening";
  
          
             </nav>
-            <button href="" className='cta'>Submit</button>
+            <button href="" className='cta'>cta</button>
         </header>
     )
 }
