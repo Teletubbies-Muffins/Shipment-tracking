@@ -1,5 +1,6 @@
 :root {
   --white-color: white;
+  --primary-dark: #434141;
   --dark-color: #24252a;
   --text: #e2eaec;
   --background: #22092c;
@@ -22,8 +23,6 @@ body {
   /* background-color: white; */
 }
 .app {
- 
-
   font-family: "lucida console", monospace;
 }
 code {
@@ -32,14 +31,25 @@ code {
 }
 
 /* here Pages Backgrounds */
-.landing-page{
+.landing-page {
   background-image: url(./Images/bg2.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .sign-up-page {
-  background-image: url(./Images/bg5.svg);
-  background-repeat:no-repeat ;
+  background-image: url(./Images/bg3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.create-shipment-page {
+  background-image: url(./Images/bg4.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-page {
+  background-image: url(./Images/bg7.svg);
+  background-repeat: no-repeat;
   background-size: cover;
 }

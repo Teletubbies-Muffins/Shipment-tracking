@@ -33,3 +33,8 @@ font-weight: bold;
   transform:scale(1.2);
 
 }
+.about-page .social-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

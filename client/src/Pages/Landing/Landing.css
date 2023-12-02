@@ -12,28 +12,26 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  animation-duration: 2s ;
-  animation-name: slidein-div ;
+  animation-duration: 2s;
+  animation-name: slidein-div;
   transition: ease-in-out;
 }
 @keyframes slidein-div {
-  from{
-    margin-top:100%;
+  from {
+    margin-top: 100%;
   }
-  to{
-    margin-top:0;
+  to {
+    margin-top: 0;
   }
 }
-
 
 .landing-page form {
   display: flex;
   justify-items: center;
   /* background-color: gray; */
   flex-direction: column;
-  
 }
-.landing-page form button{
+.landing-page form button {
   width: 50%;
   margin: auto;
 }
@@ -47,6 +45,9 @@
   /* background-color: var(--dark-color); */
   padding: 5%;
   color: white;
+  /* border: 1px dashed rgba(255, 255, 255, 0.236); */
+  /* border-right: 0px; */
+  
 }
 .landing-page .right {
   background-color: rgba(3, 2, 2, 0.186);
@@ -59,20 +60,18 @@
   font-size: 20px;
 }
 
-
-.landing-page .left input{
+.landing-page .left input {
   width: 20rem;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 20px;  
+  border-radius: 20px;
   font-size: 18px;
 }
-.landing-page form input{
+.landing-page form input {
   border-radius: 20px;
   padding-left: 10px;
   /* color: blue; */
   /* height: 2rem; */
   border-bottom: 5px solid;
 }
-

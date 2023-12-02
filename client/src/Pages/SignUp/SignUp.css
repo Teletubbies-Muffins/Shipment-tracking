@@ -9,48 +9,51 @@
 }
 
 .sign-up-page form {
-  background-color: #28a2df00 ;
+  background-color: #28a2df00;
   backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 6%;
+  padding: 2% 6% 2% 6%;
   justify-content: center;
   align-items: center;
-  color:white;
+  color: white;
 
   border-radius: 20px;
-  border: 3px dashed rgba(255, 255, 255, 0.437)
-  
-}
+  border: 3px dashed rgba(255, 255, 255, 0.437);
+  min-width: 500px;
 
+}
 
 .sign-up-page form input {
   max-width: 30rem;
   min-width: 15rem;
+  
 }
-
-
-.sign-up-page img{
-    border-radius:50%;
-    animation-name: rotate-icon;
-    animation-duration: 5s;
-    /* animation-name: slidein-div ; */
-    animation-iteration-count: infinite;
-    transition: ease-in-out ;
+.sign-up-page form label{
+ width: 100%;
+}
+.sign-up-page img {
+  border-radius: 50%;
+  animation-name: rotate-icon;
+  animation-duration: 5s;
+  /* animation-name: slidein-div ; */
+  animation-iteration-count: infinite;
+  transition: ease-in-out;
 }
 @keyframes rotate-icon {
-    from{
-        rotate: 0deg;
-    }
-    to{
-        rotate: 360deg;
-    }
-    
-    
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
 }
 
-
-.sign-up-page form button{
-    background-color: #2e679d;
+.sign-up-page form button:last-child {
+  background-color: #2e679d;
+}
+.sign-up-page .action-btn-box{
+  display: flex;
+  gap: 10px;
 }
