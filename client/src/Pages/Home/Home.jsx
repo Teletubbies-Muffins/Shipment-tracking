@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../../Components/NavBar/Navbar'
+import Navbar from '../../Components/MNavBar/Navbar'
 import InfoCard from '../../Components/InfoCard/InfoCard'
 import { Grid } from '@mui/material'
 export default function Home() {
