@@ -16,6 +16,6 @@ export default function Navbar() {
                 </nav>
                 <button href="" className='cta'>cta</button>
             </header>
-        </div>
+        </div> 
     )
 }

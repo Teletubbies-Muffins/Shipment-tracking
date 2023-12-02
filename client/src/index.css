@@ -3,10 +3,11 @@
   --white-color:white;
   --dark-color:#24252a;
   --text: #e2eaec;
---background: #22092C;
---primary: #872341;
---secondary: #BE3144;
---accent: #F05941;
+  --background: #22092C;
+  --primary: #872341;
+  --secondary: #BE3144;
+  --accent: #F05941;
+  --border-radius-primary: 20px;
 }
 
 body {
