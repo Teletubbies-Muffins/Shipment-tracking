@@ -3,7 +3,7 @@
 }
 .about-page h1{
   margin-top: 30px;
-  margin-left: 500px;
+  margin-left: 45px;
   font-family: "lucida console", monospace;
   color:rgb(176, 168, 168);
 }
@@ -30,16 +30,43 @@ color: white;
 .about-page .SMI{
   position: relative;
   height:50px;
-  left:520px;
+  left:-50px;
   margin-right: 20px;
   padding: 9px;
-  transition: transform 0.5s;
+  transition: transform 0.5s,filter 0.2s , border-bottom 0.1s;
   
 
   
+}
+
+.about-page .F:hover{
+  filter:invert(15%) sepia(89%) saturate(3435%) hue-rotate(236deg) brightness(93%) contrast(118%);
+  border-bottom: solid 2px blue;
+
+}
+
+
+.about-page .I:hover{
+  filter: invert(51%) sepia(36%) saturate(415%) hue-rotate(357deg) brightness(94%) contrast(90%);
+  border-bottom: solid 2px ;
+
+
+}
+
+.about-page .T:hover{
+  border-bottom: solid 2px  ;
+
+  filter: invert(73%) sepia(30%) saturate(802%) hue-rotate(116deg) brightness(98%) contrast(82%);
 }
 
 .about-page img:hover{
   transform:scale(1.2);
+  filter:grayscale(-200%);
 
 }
+.about-page .social-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
