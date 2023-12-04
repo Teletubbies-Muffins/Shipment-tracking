@@ -10,7 +10,7 @@ function About() {
   return (
     <div className="about-page">
       <Navbar />
-      <div>
+      <div className="Mydiv">
         <h1>ABOUT US</h1>
         <p>
           In today's fast-paced world, keeping track of your shipments is
@@ -25,9 +25,9 @@ function About() {
           including tracking numbers, delivery dates, and estimated delivery
           times, allowing you to plan accordingly.
         </p>
-        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><img src={t} alt="Twitter login" title="Visit us on twitter" /></a>
-        <a href="https://www.instagram.com/accounts/login/" target="_blank" title="Visit us on Instagram"><img src={i} alt="Instagram login" /></a>
-        <a href="https://www.facebook.com/" target="_blank" title="Visit us on Facebook"><img src={f} alt="Facebook login" /></a>
+        <a  href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><img src={t} alt="Twitter login" title="Visit us on twitter" class="SMI" /></a>
+        <a  href="https://www.instagram.com/accounts/login/" target="_blank" title="Visit us on Instagram"><img src={i} alt="Instagram login" class="SMI" /></a>
+        <a  href="https://www.facebook.com/" target="_blank" title="Visit us on Facebook"><img src={f} alt="Facebook login" class="SMI" /></a>
 
 
 

@@ -19,9 +19,9 @@ else
 greet="Good evening";
 
     return (
-        <header className='nav-bar'>
+        <header class="nav-bar">
                 <div class="oD">
-            <img src="icon.svg" alt="logo" className="logo" height={40} />
+            <img src="icon.svg" alt="logo" class="logo" height={40} />
             <p>{greet}, {props.name}</p>
 
             <div class="iD">

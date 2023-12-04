@@ -1,7 +1,11 @@
+.about-page{
+  height:100vh;
+}
 .about-page h1{
   margin-top: 30px;
+  margin-left: 500px;
   font-family: "lucida console", monospace;
-  color:rgb(79, 75, 75);
+  color:rgb(176, 168, 168);
 }
 
 /* div{
@@ -9,18 +13,24 @@
   height:700px;
 } */
 
+
+
+
 .about-page p{
+
 margin-right: 100px;
 margin-left: 100px;
 margin-top: 50px;
 margin-bottom: 50px;
 font-family: "monaco", monospace;
 font-weight: bold;
+color: white;
 }
 
-.about-page img{
+.about-page .SMI{
+  position: relative;
   height:50px;
-  margin-top: 20px;
+  left:520px;
   margin-right: 20px;
   padding: 9px;
   transition: transform 0.5s;
