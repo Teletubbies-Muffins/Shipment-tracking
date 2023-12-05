@@ -7,7 +7,7 @@ const shipmentSchema = new mongoose.Schema({
   },
   from: {
     // type: mongoose.Schema.Types.ObjectId,
-    type:String,
+    type: String,
     ref: "User", // Reference to the User model
     required: true,
   },
@@ -17,16 +17,16 @@ const shipmentSchema = new mongoose.Schema({
   arrivalTime: {
     type: Date,
   },
+  description: {
+    type: String,
+  },
   steps: [
     {
-      location: {
+      label: {
         type: String,
       },
-      arrivalTime: {
-        type: Date,
-      },
-      departureTime: {
-        type: Date,
+      description: {
+        type: String,
       },
     },
   ],

@@ -58,7 +58,12 @@ code {
   background-image: url(./Images/bg2.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  backdrop-filter: blur(10);
+  /* backdrop-filter: blur(100); */
+}
+.shipment-details-page{
+  background-image: url(./Images/bg2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .error-msg {

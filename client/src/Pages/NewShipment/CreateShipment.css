@@ -19,7 +19,7 @@
 .create-shipment-page form {
   display: flex;
   flex-direction: column;
-  background-color: #FFFF ;
+  background-color: #ffff;
   padding: 10%;
   color: white;
   border-radius: 20px;

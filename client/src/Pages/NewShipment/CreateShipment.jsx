@@ -26,6 +26,8 @@ export default function CreateShipment() {
       from: localStorage.getItem('user'),
       to: e.target.to.value,
       arrivalTime: e.target.arrivalTime.value,
+      description: e.target.description.value,
+
     }).then((res) => {
       setShipmentId(TempShipmentCode)
       document.getElementById('success').style.display = 'flex';
@@ -66,6 +68,8 @@ export default function CreateShipment() {
               {/* <TextField size='small' name='from' className='input'></TextField> */}
               <FormLabel className='label'>To</FormLabel>
               <TextField size='small' name='to' className='input'></TextField>
+              <FormLabel className='label'>Description</FormLabel>
+              <TextField size='small' name='description' className='input'></TextField>
               <hr />
               <FormLabel className='label'>Estimated delivery date</FormLabel>
               <input size='small' name='arrivalTime' type='date' className='input'></input>
