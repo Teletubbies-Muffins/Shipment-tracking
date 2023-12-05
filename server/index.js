@@ -1,12 +1,14 @@
-// import express from "express";
-// import mongoose from "mongoose";
-// import userRouter from "./routes/user.js"
-
 const express = require('express')
 const mongoose = require('mongoose')
 const userRouter = require('./routes/user.js')
 const server = express();
 // const mongoose = require("mongoose");
+const cors =require('cors')
+const corsOptions = {
+  origin: '*',
+};
+server.use(cors(corsOptions))
+
 mongoose.connect(
   "mongodb+srv://fahad:Helpme2000@cluster0.1by5gyl.mongodb.net/shipment"
 );
