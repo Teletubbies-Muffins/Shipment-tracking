@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 // import logo from './icon.svg'
 import { Link } from 'react-router-dom';
@@ -8,7 +8,8 @@ import Home from '../../Pages/Home/Home';
 //End of components import
 
 
-export default function Navbar(props) {
+export default function Navbar() {
+    const [username, setUsername] = useState(localStorage.getItem('user'))
     let greet = "";
     let time = new Date();
     if (time.getHours() >= 24 && time.getHours() < 12) {
@@ -27,7 +28,7 @@ export default function Navbar(props) {
                 <div className='logo-box'>
                     <img src="icon.svg" alt="logo" className="logo" height={40} />
                     <div>
-                        <p>{greet}, {props.name}</p>
+                        <p>{greet}, {username}</p>
                         {/* <br /> */}
                         <a href='/'><span class="material-symbols-outlined">
                             logout

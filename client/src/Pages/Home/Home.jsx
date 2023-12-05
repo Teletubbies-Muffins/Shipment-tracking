@@ -6,7 +6,7 @@ import { Grid } from '@mui/material'
 export default function Home() {
     return (
         <>
-            <Navbar name="Majd" />
+            <Navbar />
             <div className='home-page'>
                 <br />
                 <Grid container justifyItems={'center'} justifyContent={'center'} style={{ backgroundColor: "white" }}>

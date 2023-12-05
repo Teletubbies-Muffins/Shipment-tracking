@@ -17,8 +17,11 @@ export default function Landing() {
             username: e.target.username.value,
             password: e.target.password.value,
         }).then((res) => {
+            console.log(res)
+            localStorage.setItem("user", e.target.username.value)
             navigate('/home')
         }).catch((err) => {
+            console.log(err)
             setError(err.response.data.message)
         })
 
@@ -45,6 +48,7 @@ export default function Landing() {
                         <div className="auth">
                             <div className="login">
                                 <p className='text-center'>Login</p>
+                                {Error && <p className='error-msg' style={{ fontSize: '14px' }}>{Error}!</p>}
                                 <form action="" onSubmit={handleLogin}>
                                     <label htmlFor="username">Username</label>
                                     {/* <br /> */}
