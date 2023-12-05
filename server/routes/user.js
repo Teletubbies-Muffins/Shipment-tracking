@@ -9,7 +9,7 @@ router.post("/new-user", async (req, res) => {
   const username = req.body.username;
   const email = req.body.email;
 
-  //Ceck if username exists
+  //Check if username exists
   const userNameExists = await UserModel.findOne({ username });
   if (userNameExists) {
     res.status(400).json({ message: "Username already exists" });

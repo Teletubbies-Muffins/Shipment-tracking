@@ -1,23 +1,26 @@
 // import mongoose from "mongoose";
 const mongoose = require("mongoose");
-const shipment = new mongoose.Schema({
+const shipmentSchema = new mongoose.Schema({
   sh_id: {
     type: String,
     required: true,
   },
   from: {
-    type: mongoose.Schema.Types.ObjectId,
+    // type: mongoose.Schema.Types.ObjectId,
+    type:String,
     ref: "User", // Reference to the User model
     required: true,
   },
   to: {
     type: String,
   },
+  arrivalTime: {
+    type: Date,
+  },
   steps: [
     {
       location: {
         type: String,
-        required: true,
       },
       arrivalTime: {
         type: Date,
