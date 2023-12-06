@@ -1,10 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Container, Stack, Grid, Button } from '@mui/material'
 import './Landing.css'
-import TextField from '@mui/material/TextField';
-import Image from './truck.png'
-import Navbar from '../../Components/NavBar/Navbar'
+
+import { Axios } from '../../Components/Axios/Axios'
+
 export default function Landing() {
+    const [Error, setError] = useState(false)
+    const navigate = useNavigate()
+
+    const handleLogin = (e) => {
+        e.preventDefault()
+        setError(false)
+
+        Axios.post("user/login", {
+            username: e.target.username.value,
+            password: e.target.password.value,
+        }).then((res) => {
+            console.log(res)
+            localStorage.setItem("user", e.target.username.value)
+            navigate('/home')
+        }).catch((err) => {
+            console.log(err)
+            setError(err.response.data.message)
+        })
+
+    }
     return (
         <>
             <div className='landing-page'>
@@ -27,16 +48,17 @@ export default function Landing() {
                         <div className="auth">
                             <div className="login">
                                 <p className='text-center'>Login</p>
-                                <form action="">
+                                {Error && <p className='error-msg' style={{ fontSize: '14px' }}>{Error}!</p>}
+                                <form action="" onSubmit={handleLogin}>
                                     <label htmlFor="username">Username</label>
                                     {/* <br /> */}
-                                    <input type="text" name="username" id="" />
+                                    <input type="text" name="username" id="" required />
                                     {/* <br /> */}
                                     <label htmlFor="password">Password</label>
                                     {/* <br /> */}
-                                    <input type="password" name="password" id="" />
+                                    <input type="password" name="password" id="" required />
                                     <hr />
-                                    <Button variant='contained' className='' >Login</Button>
+                                    <Button variant='contained' className='' type='submit'>Login</Button>
                                 </form>
                             </div>
                             <div className="text-center">

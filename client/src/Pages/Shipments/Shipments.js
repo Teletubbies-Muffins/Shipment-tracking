@@ -6,7 +6,7 @@ export default function Shipments() {
 
         <img src="https://pngimg.com/d/free_shipping_PNG74.png"/>
         <form>
-            <label>Shipment ID</span><input type="text" class="form-control" placeholder='ID'/>
+            <label>Shipment ID</label><input type="text" class="form-control" placeholder='ID'/>
         </form>
     </div>
   )

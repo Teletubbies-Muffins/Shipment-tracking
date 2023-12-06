@@ -54,16 +54,22 @@ code {
   background-size: cover;
 }
 
-.about-page{
+.about-page {
   background-image: url(./Images/bg2.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  backdrop-filter: blur(10);
+  /* backdrop-filter: blur(100); */
+}
+.shipment-details-page{
+  background-image: url(./Images/bg2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.Shipments-page{
-  background-image: url(./Images/bg2.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  backdrop-filter: blur(10);
+.error-msg {
+  color: rgb(242, 242, 242);
+  background-color: rgb(209, 4, 4);
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  text-align: center;
 }

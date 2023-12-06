@@ -1,0 +1,25 @@
+.shipment-details-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+
+.shipment-details-page .card {
+  padding: 10px;
+}
+.shipment-details-page form {
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+  width: 20rem;
+}
+.shipment-details-page .form-container {
+  display: none;
+}
+.shipment-details-page .steps {
+  width: 40%;
+}

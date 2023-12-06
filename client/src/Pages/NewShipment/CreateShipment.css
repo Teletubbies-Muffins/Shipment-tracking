@@ -14,13 +14,12 @@
 
 .create-shipment-page .headline {
   position: absolute;
-  
 }
 
 .create-shipment-page form {
   display: flex;
   flex-direction: column;
-  background-color: rgb(225, 225, 225);
+  background-color: #ffff;
   padding: 10%;
   color: white;
   border-radius: 20px;
@@ -66,4 +65,21 @@
 .create-shipment-page .shipment-id span:hover {
   /* background-color: rgb(176, 176, 176); */
   color: rgb(129, 127, 127);
+}
+
+.create-shipment-page .success {
+  display: none;
+
+  flex-direction: column;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.create-shipment-page .success .done-icon {
+  color: rgb(16, 179, 16);
+  font-size: 100px;
+  background-color: rgba(240, 248, 255, 0.218);
+  border-radius: 20px;
+  align-items: center;
 }
