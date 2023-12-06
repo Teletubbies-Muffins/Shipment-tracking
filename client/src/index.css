@@ -73,3 +73,9 @@ code {
   border-radius: 5px;
   text-align: center;
 }
+
+.shipment-page{
+  background-image: url(./Images/bg2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

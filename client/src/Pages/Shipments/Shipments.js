@@ -1,13 +1,12 @@
 import React from 'react'
 import "./shipments.css";
+import MainCard from '../../Components/MainCard/MainCard';
+import Navbar from '../../Components/NavBar/Navbar';
 export default function Shipments() {
   return (
-    <div className="Shipments-page">
-
-        <img src="https://pngimg.com/d/free_shipping_PNG74.png"/>
-        <form>
-            <label>Shipment ID</label><input type="text" class="form-control" placeholder='ID'/>
-        </form>
-    </div>
-  )
+<div className="shipment-page">
+  <Navbar/>
+  <MainCard/>
+</div>
+    )
 }
