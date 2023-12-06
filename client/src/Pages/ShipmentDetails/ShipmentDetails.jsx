@@ -17,7 +17,7 @@ export default function ShipmentDetails() {
             setShipment(res.data)
             console.log(res.data)
         }).catch((err) => {
-            alert("err")
+            console.log(err.data)
         })
     }
 
