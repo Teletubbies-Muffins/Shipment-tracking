@@ -5,6 +5,7 @@ import Landing from "./Pages/Landing/Landing";
 import About from "./Pages/About/About";
 import SignUp from "./Pages/SignUp/SignUp";
 import CreateShipment from "./Pages/NewShipment/CreateShipment";
+import Shipments from "./Pages/Shipments/Shipments";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.css";
 function App() {
@@ -17,6 +18,9 @@ function App() {
           <Route element={<SignUp />} path="/sign-up" />
           <Route element={<CreateShipment />} path="/new-shipment" />
           <Route path="/about" element={<About />}></Route>
+          <Route path="/shipments" element={<Shipments />}></Route>
+
+
         </Routes>
       </BrowserRouter>
     </div>

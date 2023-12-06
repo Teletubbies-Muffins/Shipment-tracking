@@ -1,0 +1,43 @@
+img{
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+    opacity: 0.3;
+animation-name: slide-leftT;
+animation-duration: 1.2s;
+
+}
+.Shipments-page{
+    height:100vh;
+}
+
+.Shipments-page form{
+    position: absolute;
+    background-color: rgb(225, 219, 219);
+    border-radius: 10px;
+    height:500px;
+    width: 500px;
+    margin-left: 300px;
+    margin-top: -500px;
+    z-index:1;
+}
+@keyframes slide-leftT {
+    from{
+        margin-left: -500px;
+    }
+    to{
+        margin-left: 50px;
+        opacity: 0.3;
+    }
+}
+
+
+.Shipments-page input{
+    width:60%;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+.Shipments-page form span{
+    margin-top: 50px;
+}
