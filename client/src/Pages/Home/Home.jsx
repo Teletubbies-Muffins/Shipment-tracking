@@ -4,12 +4,15 @@ import Navbar from '../../Components/NavBar/Navbar'
 import './Home.css'
 import ShipmentCard from '../../Components/ShipmentCard/ShipmentCard'
 import { Grid } from '@mui/material'
+import CreateShipment from '../../Components/CreateShipment/CreateShipment'
 import { Axios } from '../../Components/Axios/Axios'
+
+
 export default function Home() {
     const [RecentShipment, setRecentShipment] = useState([])
 
     const getRecentShipments = () => {
-        Axios.get(`shipment/user-shipments/${'fahad'}`).then((res) => {
+        Axios.get(`shipment/user-shipments/${localStorage.getItem('user')}`).then((res) => {
             setRecentShipment(res.data)
             console.log(res.data)
         }).catch((err) => {
@@ -27,7 +30,7 @@ export default function Home() {
                 <br />
                 <Grid container justifyItems={'center'} justifyContent={'center'} gap={2} >
                     <Grid item md={6}>
-                        hello
+                        <CreateShipment />
                     </Grid>
                     <Grid item md={4} xs={12} sm={12}>
                         <div className='recent-card-container'>

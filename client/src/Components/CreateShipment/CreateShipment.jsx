@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './CreateShipment.css'
 import { Grid, FormLabel, TextField, Button } from '@mui/material'
-import Navbar from '../../Components/NavBar/Navbar'
-import { Axios } from '../../Components/Axios/Axios'
+import Navbar from '../NavBar/Navbar'
+import { Axios } from '../Axios/Axios'
 // import InsertLinkIcon from '@mui/icons-material/InsertLink';
 function generateID(length) {
   let result = '';
@@ -58,37 +58,39 @@ export default function CreateShipment() {
   }
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <h2 className='headline'>Create new Shipment</h2> */}
-      <div className='create-shipment-page' >
-        <Grid container className='container'>
-          <Grid item sm={12} xs={12} md={5}>
-            <form action="" onSubmit={handleNewShipment} id="form">
-              {/* <FormLabel className='label '>From</FormLabel> */}
-              {/* <TextField size='small' name='from' className='input'></TextField> */}
-              <FormLabel className='label'>To</FormLabel>
-              <TextField size='small' name='to' className='input'></TextField>
-              <FormLabel className='label'>Description</FormLabel>
-              <TextField size='small' name='description' className='input'></TextField>
-              <hr />
-              <FormLabel className='label'>Estimated delivery date</FormLabel>
-              <input size='small' name='arrivalTime' type='date' className='input'></input>
-              <hr style={{ color: "black" }} />
-              <Button variant='outlined' type="submit">Create</Button>
-            </form>
-            <div action="" className='success' id="success">
-              <span class="material-symbols-outlined done-icon">
-                task_alt
-              </span>
-              <p className='text-center text-white'>Shipment Created</p>
-              <Button variant='contained' color='secondary' onClick={handleAddAnother}>add another one</Button>
-            </div>
-          </Grid>
-          <Grid item sm={12} xs={12} md={5}>
-            <h2 className="text-white">Create New Shipment</h2>
+      <div className='create-shipment' >
+        {/* <Grid container className='container'> */}
+        <Grid item sm={12} xs={12} md={12}>
+          <h2 className="text-white">Create New Shipment</h2>
+          <hr />
+          <h5 className='text-white'>After Creating new shipment share Shipment ID With the receiver so he can see the details </h5>
+          <hr />
+
+        </Grid>
+        <Grid item sm={12} xs={12} md={12}>
+          <form action="" onSubmit={handleNewShipment} id="form">
+            {/* <FormLabel className='label '>From</FormLabel> */}
+            {/* <TextField size='small' name='from' className='input'></TextField> */}
+            <FormLabel className='label'>To</FormLabel>
+            <TextField size='small' name='to' className='input'></TextField>
+            <FormLabel className='label'>Description</FormLabel>
+            <TextField size='small' name='description' className='input'></TextField>
             <hr />
-            <h5 className='text-white'>After Creating new shipment share Shipment ID With the receiver so he can see the details </h5>
-            <hr />
+            <FormLabel className='label'>Estimated delivery date</FormLabel>
+            <input size='small' name='arrivalTime' type='date' className='input'></input>
+            <hr style={{ color: "black" }} />
+            <Button variant='outlined' type="submit">Create</Button>
+          </form>
+
+
+          <div action="" className='success' id="success">
+            <span class="material-symbols-outlined done-icon">
+              task_alt
+            </span>
+            <p className='text-center text-white'>Shipment Created</p>
+            <Button variant='contained' color='secondary' onClick={handleAddAnother}>add another one</Button>
             <h4 className='shipment-id'>
               {ShipmentId}
               {/* <Button variant='contained' className='float-end'>Copy</Button> */}
@@ -96,8 +98,11 @@ export default function CreateShipment() {
                 content_copy
               </span>
             </h4>
-          </Grid>
+          </div>
+          {/* <hr /> */}
         </Grid>
+
+        {/* </Grid> */}
       </div>
     </>
   )

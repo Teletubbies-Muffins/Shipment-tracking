@@ -12,5 +12,12 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow-y: scroll;
+  /* overflow-y: hidden; */
+  max-height: 85vh;
   
 }
+.home-page .recent-card-container::-webkit-scrollbar {
+  display: none;
+}
+

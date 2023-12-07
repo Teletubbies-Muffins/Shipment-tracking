@@ -52,7 +52,7 @@ export default function Navbar() {
             <nav className='nav-container'>
                 <ul className='nav_links'>
                     <NavLink to="/home" className="link-tag"><li><a href="">Home</a></li></NavLink>
-                    <NavLink to="/new-shipment" className="link-tag"><li><a href="">New Shipments</a></li></NavLink>
+                    {/* <NavLink to="/new-shipment" className="link-tag"><li><a href="">New Shipments</a></li></NavLink> */}
                     <NavLink to="/shipments" className="link-tag"><li><a href="">Shipments</a></li></NavLink>
                     <NavLink to="/about" className="link-tag"><li><a href="">About</a></li></NavLink>
                 </ul>

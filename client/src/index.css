@@ -1,7 +1,9 @@
 :root {
   --white-color: white;
   --text: #e2eaec;
+  --text-black: black;
   --primary-white: #eeeeee;
+
   --primary-dark: #222831;
   --primary: #393e46;
   --secondary: #355c7d;
@@ -37,35 +39,42 @@ code {
   background-image: url(./Images/bg-5.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: scroll;
 }
 
 .sign-up-page {
   background-image: url(./Images/bg-3.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: scroll;
 }
 
 .create-shipment-page {
   background-image: url(./Images/bg-2.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: scroll;
 }
 .home-page {
   background-image: url(./Images/bg-3.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .about-page {
   background-image: url(./Images/bg-6.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: scroll;
   /* backdrop-filter: blur(100); */
 }
 .shipment-details-page {
   background-image: url(./Images/bg-2.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: scroll;
 }
 
 .error-msg {
@@ -80,4 +89,9 @@ code {
   background-image: url(./Images/bg-3.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
