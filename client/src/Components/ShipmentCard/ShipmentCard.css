@@ -1,0 +1,46 @@
+.shipment-card .card-1 {
+  animation: Slide-in-card 1s ease-in-out;
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+@keyframes Slide-in-card {
+  0% {
+    position: relative;
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+.shipment-card .deliver-icon-container {
+  width: 40%;
+  height: 1.7rem;
+  border-radius: 20px;
+  background-color: white;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.shipment-card .material-symbols-outlined {
+  color: var(--secondary);
+  animation: Deliver-icon 6s ease-in-out;
+  animation-iteration-count: infinite;
+  margin-left: -15%;
+  border-bottom: solid 100px var(--accent);
+  /* margin-left: 0px; */
+}
+
+@keyframes Deliver-icon {
+  from {
+    margin-left: -15%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+
+.shipment-card button{
+    background-color: var(--accent);
+}

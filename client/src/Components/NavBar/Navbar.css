@@ -31,22 +31,31 @@
 
 .nav_links {
   list-style: none;
+  display: flex;
+  gap: 10px;
 }
 .nav_links li {
   display: inline-block;
   padding: 0px 20px;
 }
-.nav_links li a {
+
+.nav_links .link-tag {
   transition: all 0.3s ease 0s;
-  background-color: #393a423d;
+  /* background-color: #393a423d; */
   font-weight: bold;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   padding: 10px 20px 10px 20px;
   color: white;
 }
-.nav_links li a:hover {
+.active {
+  /* background-color: #ebebeb; */
+  border-bottom: solid 3px #0088a9;
+  border-radius: 0px;
+}
+.nav_links .link-tag:hover {
   color: white;
   background-color: #0088a9;
+  border-radius: 50px;
 }
 .cta {
   padding: 9px 25px;

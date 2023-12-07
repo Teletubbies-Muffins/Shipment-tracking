@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 // import logo from './icon.svg'
 import { Link } from 'react-router-dom';
@@ -50,10 +51,10 @@ export default function Navbar() {
             {/*Nav*/}
             <nav className='nav-container'>
                 <ul className='nav_links'>
-                    <Link to="/home"><li><a href="">Home</a></li></Link>
-                    <Link to="/new-shipment"><li><a href="">New Shipments</a></li></Link>
-                    <Link to="/shipments"><li><a href="">Shipments</a></li></Link>
-                    <Link to="/about"><li><a href="">About</a></li></Link>
+                    <NavLink to="/home" className="link-tag"><li><a href="">Home</a></li></NavLink>
+                    <NavLink to="/new-shipment" className="link-tag"><li><a href="">New Shipments</a></li></NavLink>
+                    <NavLink to="/shipments" className="link-tag"><li><a href="">Shipments</a></li></NavLink>
+                    <NavLink to="/about" className="link-tag"><li><a href="">About</a></li></NavLink>
                 </ul>
             </nav>
             {/* <button href="" className='cta'>cta</button> */}

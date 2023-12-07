@@ -12,7 +12,7 @@ export default function ShipmentDetails() {
 
     const { sh_id } = useParams()
     const getShipmentDetails = () => {
-        Axios.get(`shipment/${sh_id}`).then((res) => {
+        Axios.get(`shipment/shipment-details/${sh_id}`).then((res) => {
             // alert("get")
             setShipment(res.data)
             console.log(res.data)

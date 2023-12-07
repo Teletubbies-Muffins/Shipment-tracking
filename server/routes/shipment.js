@@ -21,9 +21,8 @@ router.post("/new", async (req, res) => {
   }
 });
 
-router.get("/:sh_id", async (req, res) => {
+router.get("shipment-details/:sh_id", async (req, res) => {
   try {
-    console.log("herer");
     const shipment = await ShipmentModel.findOne({ sh_id: req.params.sh_id });
     res.status(200).json(shipment);
   } catch (err) {
@@ -56,6 +55,22 @@ router.put("/:id", async (req, res) => {
           res.status(201).json(shipment);
         }
       });
+    }
+  });
+});
+
+router.get("/user-shipments/:username", (req, res) => {
+  const user = req.params.username;
+  // console.log(user);
+  ShipmentModel.find({ from: user }, (err, shipment) => {
+    if (err) {
+      console.log("Error finding data");
+      res.status(400).json({ message: "error" });
+    } else if (!shipment) {
+      console.log("Shipment not found");
+      res.status(404).json({ message: "not found" });
+    } else {
+      res.status(200).json(shipment);
     }
   });
 });
