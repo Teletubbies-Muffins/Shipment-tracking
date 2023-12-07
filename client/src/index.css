@@ -1,13 +1,15 @@
 :root {
   --white-color: white;
-  --primary-dark: #434141;
-  --dark-color: #24252a;
   --text: #e2eaec;
-  --background: #22092c;
-  --primary: #872341;
-  --secondary: #be3144;
-  --accent: #f05941;
+  --primary-white: #eeeeee;
+  --primary-dark: #222831;
+  --primary: #393e46;
+  --secondary: #355c7d;
+  --accent: #00adb5;
   --border-radius-primary: 20px;
+  /* --primary-dark: #434141; */
+  /* --dark-color: #24252a; */
+  /* --background: #22092c; */
 }
 
 body {
@@ -32,36 +34,36 @@ code {
 
 /* here Pages Backgrounds */
 .landing-page {
-  background-image: url(./Images/bg2.svg);
+  background-image: url(./Images/bg-5.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .sign-up-page {
-  background-image: url(./Images/bg3.svg);
+  background-image: url(./Images/bg-3.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .create-shipment-page {
-  background-image: url(./Images/bg4.svg);
+  background-image: url(./Images/bg-2.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .home-page {
-  background-image: url(./Images/bg7.svg);
+  background-image: url(./Images/bg-4.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .about-page {
-  background-image: url(./Images/bg2.svg);
+  background-image: url(./Images/bg-6.svg);
   background-repeat: no-repeat;
   background-size: cover;
   /* backdrop-filter: blur(100); */
 }
-.shipment-details-page{
-  background-image: url(./Images/bg2.svg);
+.shipment-details-page {
+  background-image: url(./Images/bg-2.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -74,8 +76,8 @@ code {
   text-align: center;
 }
 
-.shipment-page{
-  background-image: url(./Images/bg2.svg);
+.shipment-page {
+  background-image: url(./Images/bg-3.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }

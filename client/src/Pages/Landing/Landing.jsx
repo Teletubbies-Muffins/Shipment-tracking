@@ -22,7 +22,8 @@ export default function Landing() {
             navigate('/home')
         }).catch((err) => {
             console.log(err)
-            setError(err.response.data.message)
+            setError("wrong credential")
+
         })
 
     }

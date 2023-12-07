@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from '../../Components/NavBar/Navbar'
-import InfoCard from '../../Components/InfoCard/InfoCard'
+// import InfoCard from '../../Components/InfoCard/InfoCard'
 import './Home.css'
+import ShipmentCard from '../../Components/ShipmentCard/ShipmentCard'
 import { Grid } from '@mui/material'
 export default function Home() {
     return (
@@ -9,9 +10,12 @@ export default function Home() {
             <Navbar />
             <div className='home-page'>
                 <br />
-                <Grid container justifyItems={'center'} justifyContent={'center'} style={{ backgroundColor: "white" }}>
+                <Grid container justifyItems={'center'} justifyContent={'center'} gap={1}>
+                    <Grid item >
+                        hello
+                    </Grid>
                     <Grid item>
-                        <InfoCard img="https://cdn-icons-png.flaticon.com/512/2801/2801874.png" hTitle="Shipments, latest and old and current" title="Shipments" content="Latest shipments" linkText="Ship details"></InfoCard>
+                        <ShipmentCard />
                     </Grid>
                 </Grid>
             </div>
