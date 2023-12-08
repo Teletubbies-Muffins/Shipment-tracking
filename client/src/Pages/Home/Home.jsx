@@ -6,7 +6,7 @@ import ShipmentCard from '../../Components/ShipmentCard/ShipmentCard'
 import { Grid } from '@mui/material'
 import CreateShipment from '../../Components/CreateShipment/CreateShipment'
 import { Axios } from '../../Components/Axios/Axios'
-
+import AnimatedCard from '../../Components/AnimatedCard/AnimatedCard'
 
 export default function Home() {
     const [RecentShipment, setRecentShipment] = useState([])
@@ -36,7 +36,8 @@ export default function Home() {
                         <div className='recent-card-container'>
                             {RecentShipment ?
                                 RecentShipment.map((shipment) => (
-                                    <ShipmentCard shipment={shipment} />
+                                    // <ShipmentCard shipment={shipment} />
+                                    <AnimatedCard  shipment={shipment}/>
                                 ))
                                 : <>no recent shipment</>}
                         </div>

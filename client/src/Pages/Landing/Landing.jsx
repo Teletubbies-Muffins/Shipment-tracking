@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Container, Stack, Grid, Button } from '@mui/material'
 import './Landing.css'
-
+import LoginComponent from '../../Components/LoginComponent/LoginComponent'
 import { Axios } from '../../Components/Axios/Axios'
 
 export default function Landing() {
@@ -47,16 +47,16 @@ export default function Landing() {
                     </Grid>
                     <Grid className="right" item xs={12} sm={12} md={4}>
                         <div className="auth">
-                            <div className="login">
+                            {/* <div className="login">
                                 <p className='text-center'>Login</p>
                                 {Error && <p className='error-msg' style={{ fontSize: '14px' }}>{Error}!</p>}
                                 <form action="" onSubmit={handleLogin}>
                                     <label htmlFor="username">Username</label>
-                                    {/* <br /> */}
+                                   
                                     <input type="text" name="username" id="" required />
-                                    {/* <br /> */}
+                                   
                                     <label htmlFor="password">Password</label>
-                                    {/* <br /> */}
+                                   
                                     <input type="password" name="password" id="" required />
                                     <hr />
                                     <Button variant='contained' className='' type='submit'>Login</Button>
@@ -64,7 +64,8 @@ export default function Landing() {
                             </div>
                             <div className="text-center">
                                 <a href="/sign-up">Sign Up</a>
-                            </div>
+                            </div> */}
+                            <LoginComponent handleLogin ={handleLogin}/>
 
                         </div>
                     </Grid>

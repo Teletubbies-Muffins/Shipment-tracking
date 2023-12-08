@@ -25,16 +25,17 @@
   }
 }
 
-.landing-page form {
+/* .landing-page form {
   display: flex;
   justify-items: center;
-  /* background-color: gray; */
+ 
   flex-direction: column;
-}
-.landing-page form button {
+} */
+
+/* .landing-page form button {
   width: 50%;
   margin: auto;
-}
+} */
 
 /* .item-grid {
   
@@ -49,7 +50,7 @@
   /* border-right: 0px; */
   
 }
-.landing-page .right {
+.landing-page .right2 {
   background-color: rgba(3, 2, 2, 0.186);
   backdrop-filter: blur(5);
   /* background-color: var(--primary); */

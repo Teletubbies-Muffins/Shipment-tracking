@@ -15,9 +15,11 @@
   overflow-y: scroll;
   /* overflow-y: hidden; */
   max-height: 85vh;
-  
 }
 .home-page .recent-card-container::-webkit-scrollbar {
   display: none;
 }
 
+.home-page .container {
+  
+}
