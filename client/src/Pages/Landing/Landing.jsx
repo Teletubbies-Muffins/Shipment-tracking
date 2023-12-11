@@ -5,11 +5,15 @@ import './Landing.css'
 import LoginComponent from '../../Components/LoginComponent/LoginComponent'
 import { Axios } from '../../Components/Axios/Axios'
 import Loader from '../../Components/Loader/Loader'
+import SearchBar from '../../Components/SearchBar/SearchBar'
 export default function Landing() {
     const [Error, setError] = useState(false)
     const [Loading, setLoading] = useState(false)
     const navigate = useNavigate()
 
+    const handleSetErr = (message) => {
+        setError(message)
+    }
     const handleLogin = (e) => {
         e.preventDefault()
         setError(false)
@@ -36,9 +40,9 @@ export default function Landing() {
                 <Grid className='container' container gap={1}>
                     <Grid className="left" item xs={12} sm={12} md={7}>
                         <h1 className='hero'>Find Your Shipment</h1>
-                        <div className="search">
-                            <input type="text" placeholder='search for a shipment' />
-                        </div>
+                        {Error && <p style={{ color: 'red' }}>{Error}</p>}
+                        <SearchBar handleSetErr={handleSetErr} />
+                        <br />
                         <br />
                         <h4 className='hero'>
                             You can enter the shipment Id to see the details of the shipment

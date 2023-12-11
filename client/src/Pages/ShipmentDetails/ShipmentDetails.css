@@ -24,11 +24,7 @@
   width: 100%;
 }
 
-.shipment-details-page .delete-icon {
-  /* color: rgb(211, 74, 74); */
-  /* background-color: white; */
-  
-}
+
 .shipment-details-page .action-box{
   display: flex;
   gap: 20px;
