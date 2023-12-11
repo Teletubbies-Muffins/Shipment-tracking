@@ -9,3 +9,6 @@ Content-Type: application/json
     "password":"fahad123",
     "email":"fahad@gmail.com"
 }
+
+###
+POST http://localhost:8000/shipment/LDhTYbGWJ2

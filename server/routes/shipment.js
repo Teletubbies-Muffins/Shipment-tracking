@@ -21,7 +21,7 @@ router.post("/new", async (req, res) => {
   }
 });
 
-router.get("shipment-details/:sh_id", async (req, res) => {
+router.get("/shipment-details/:sh_id", async (req, res) => {
   try {
     const shipment = await ShipmentModel.findOne({ sh_id: req.params.sh_id });
     res.status(200).json(shipment);
@@ -31,8 +31,9 @@ router.get("shipment-details/:sh_id", async (req, res) => {
   }
 });
 
-router.put("/:id", async (req, res) => {
-  ShipmentModel.findById(req.params.id, (err, shipment) => {
+router.post("/:id", async (req, res) => {
+  console.log("called");
+  ShipmentModel.findOne({ sh_id: req.params.id }, (err, shipment) => {
     if (err) {
       console.log("Error finding shipment", err);
       res.status(400).json({ message: "error" });
@@ -73,6 +74,18 @@ router.get("/user-shipments/:username", (req, res) => {
       res.status(200).json(shipment);
     }
   });
+});
+
+router.delete("/:id", (req, res) => {
+  ShipmentModel.findByIdAndDelete(req.params.id)
+    .then((response) => {
+      console.log("Shipment deleted");
+      res.status(200).json({ message: "shipment deleted" });
+    })
+    .catch((err) => {
+      console.log("Deletion failed");
+      res.status(400).json({ message: "Deletion failed" });
+    });
 });
 // router.post('/')
 

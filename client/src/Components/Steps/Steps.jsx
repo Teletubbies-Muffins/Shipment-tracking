@@ -29,21 +29,24 @@ import Typography from '@mui/material/Typography';
 //     },
 // ];
 
-export default function VerticalLinearStepper(props) {
+export default function VerticalLinearStepper({ steps }) {
     const [activeStep, setActiveStep] = React.useState(0);
-    const [steps, setSteps] = useState(props.steps)
+    const Steps = ([...steps]).reverse()
+    // console.log(Steps)
+
+    // console.log(steps)
     // if (props.steps.length()) {
     // setSteps([{ label: "Pending", description: "your shipment still not shipped" },{ label: "Pending", description: "your shipment still not shipped" }])
     // }
     return (
-        <Box sx={{ maxWidth: 400 }}>
-            <Stepper activeStep={activeStep} orientation="vertical">
-                {steps.map((step, index) => (
+        <Box sx={{ minWidth: 400, maxWidth: 300 }}>
+            <Stepper activeStep={activeStep} orientation="vertical" >
+                {Steps.map((step, index) => (
                     <Step key={step.label}>
                         <StepLabel
                             optional={
                                 index === 2 ? (
-                                    <Typography variant="caption">Last step</Typography>
+                                    <Typography variant="caption"></Typography>
                                 ) : null
                             }
                         >

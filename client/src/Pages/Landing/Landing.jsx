@@ -4,15 +4,17 @@ import { Container, Stack, Grid, Button } from '@mui/material'
 import './Landing.css'
 import LoginComponent from '../../Components/LoginComponent/LoginComponent'
 import { Axios } from '../../Components/Axios/Axios'
-
+import Loader from '../../Components/Loader/Loader'
 export default function Landing() {
     const [Error, setError] = useState(false)
+    const [Loading, setLoading] = useState(false)
     const navigate = useNavigate()
 
     const handleLogin = (e) => {
         e.preventDefault()
         setError(false)
-
+        setLoading(true)
+        // loading
         Axios.post("user/login", {
             username: e.target.username.value,
             password: e.target.password.value,
@@ -23,6 +25,7 @@ export default function Landing() {
         }).catch((err) => {
             console.log(err)
             setError("wrong credential")
+            setLoading(false)
 
         })
 
@@ -65,7 +68,8 @@ export default function Landing() {
                             <div className="text-center">
                                 <a href="/sign-up">Sign Up</a>
                             </div> */}
-                            <LoginComponent handleLogin ={handleLogin}/>
+                            {Loading ? <Loader /> : <LoginComponent handleLogin={handleLogin} />}
+
 
                         </div>
                     </Grid>

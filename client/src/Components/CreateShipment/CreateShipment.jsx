@@ -69,7 +69,7 @@ export default function CreateShipment() {
           <hr />
 
         </Grid>
-        <Grid item sm={12} xs={12} md={12}>
+        <Grid item sm={12} xs={12} md={12} className="form-container">
           <form action="" onSubmit={handleNewShipment} id="form">
             {/* <FormLabel className='label '>From</FormLabel> */}
             {/* <TextField size='small' name='from' className='input'></TextField> */}

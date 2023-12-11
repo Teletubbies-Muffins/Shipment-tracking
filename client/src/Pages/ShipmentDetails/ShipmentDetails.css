@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  gap: 10px;
+  gap: 5%;
 }
 
 .shipment-details-page .card {
@@ -21,5 +21,15 @@
   display: none;
 }
 .shipment-details-page .steps {
-  width: 40%;
+  width: 100%;
+}
+
+.shipment-details-page .delete-icon {
+  /* color: rgb(211, 74, 74); */
+  /* background-color: white; */
+  
+}
+.shipment-details-page .action-box{
+  display: flex;
+  gap: 20px;
 }

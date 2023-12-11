@@ -18,6 +18,10 @@
 .create-shipment .headline {
   position: absolute;
 }
+.create-shipment .form-container {
+  width: 80%;
+}
+
 
 .create-shipment form {
   display: flex;

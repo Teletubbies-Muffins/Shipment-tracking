@@ -21,6 +21,10 @@
   background-color: var(--primary-dark);
   /* position: fixed; */
   /* width: 100%; */
+  /* background: rgba(29, 31, 32, 0.904)
+    radial-gradient(rgba(255, 255, 255, 0.712) 10%, transparent 1%); */
+
+  /* background-size: 11px 11px; */
 }
 .logo {
   cursor: pointer;
