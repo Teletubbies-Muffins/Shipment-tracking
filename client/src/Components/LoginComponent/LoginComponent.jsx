@@ -1,11 +1,12 @@
 import React from 'react'
 import './LoginComponent.css'
-export default function LoginComponent({ handleLogin }) {
+export default function LoginComponent({ handleLogin, ErrorMsg }) {
     return (
         <div className='login-component'>
             <div id="Container">
                 <form class="form" onSubmit={handleLogin}>
                     <div id="login-lable">Login</div>
+                    <p className='text-warning '>{ErrorMsg}</p>
                     <input class="form-content" type="text" placeholder="UserName" name='username' />
                     <input class="form-content" type="password" placeholder="PassWord" name="password" />
                     <button type='submit'>Continue</button>

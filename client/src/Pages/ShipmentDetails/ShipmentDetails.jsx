@@ -51,6 +51,17 @@ export default function ShipmentDetails() {
 
         })
     }
+
+    const handleMarkDone = () => {
+        Axios.put('/shipment/' + Shipment._id).then((res) => {
+            alert("Shipment marked done")
+            // navigate('/home')
+        }).catch((err) => {
+            setMsg("Error when deleting try again")
+            console.log(err)
+
+        })
+    }
     useEffect(() => {
         getShipmentDetails()
     }, [])
@@ -70,7 +81,9 @@ export default function ShipmentDetails() {
                     <div className='action-box'>
                         <button className='btn btn-secondary ' onClick={handleUpdateButtonClicked}>Update Shipment Status</button>
                         <button className='btn btn-danger ' onClick={handleDeleteShipment}>Delete</button>
-
+                        {!Shipment.done &&
+                            <button className='btn btn-success ' onClick={handleMarkDone} >Mark Done</button>
+                        }
 
                     </div>
                     <hr />

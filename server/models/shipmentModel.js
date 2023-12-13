@@ -20,6 +20,10 @@ const shipmentSchema = new mongoose.Schema({
   description: {
     type: String,
   },
+  done: {
+    type: Boolean,
+    required: false,
+  },
   steps: [
     {
       label: {

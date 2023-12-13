@@ -9,11 +9,13 @@ import SearchBar from '../../Components/SearchBar/SearchBar'
 export default function Landing() {
     const [Error, setError] = useState(false)
     const [Loading, setLoading] = useState(false)
+    const [SearchError, setSearchError] = useState(false)
     const navigate = useNavigate()
 
     const handleSetErr = (message) => {
-        setError(message)
+        setSearchError(message)
     }
+
     const handleLogin = (e) => {
         e.preventDefault()
         setError(false)
@@ -40,7 +42,7 @@ export default function Landing() {
                 <Grid className='container' container gap={1}>
                     <Grid className="left" item xs={12} sm={12} md={7}>
                         <h1 className='hero'>Find Your Shipment</h1>
-                        {Error && <p style={{ color: 'red' }}>{Error}</p>}
+                        {SearchError && <p className='text-warning '>{SearchError}</p>}
                         <SearchBar handleSetErr={handleSetErr} />
                         <br />
                         <br />
@@ -72,7 +74,7 @@ export default function Landing() {
                             <div className="text-center">
                                 <a href="/sign-up">Sign Up</a>
                             </div> */}
-                            {Loading ? <Loader /> : <LoginComponent handleLogin={handleLogin} />}
+                            {Loading ? <Loader /> : <LoginComponent handleLogin={handleLogin} ErrorMsg={Error} />}
 
 
                         </div>

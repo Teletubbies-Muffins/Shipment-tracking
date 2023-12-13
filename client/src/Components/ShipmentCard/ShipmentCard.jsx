@@ -26,21 +26,19 @@ export default function ShipmentCard({ shipment }) {
                         {shipment.description}
                     </Typography>
                     <Typography sx={{ mb: 1.5 }} >
-                        expected arrival date {GetFullDate(shipment.arrivalTime)}
+                        arrival date: <br /> {GetFullDate(shipment.arrivalTime)}
                     </Typography>
-                    <Typography variant="body2">
-                        {/* well meaning and kindly. */}
-                        <br />
-                        {/* {'"a benevolent smile"'} */}
-                    </Typography>
+
                 </CardContent>
                 <CardActions>
                     <button variant='contained' className='btn' onClick={handleViewClicked}>View</button>
-                    <div className='deliver-icon-container'>
-                        <span class="material-symbols-outlined">
-                            local_shipping
-                        </span>
-                    </div>
+                    {!shipment.done &&
+                        <div className='deliver-icon-container'>
+                            <span class="material-symbols-outlined">
+                                local_shipping
+                            </span>
+                        </div>
+                    }
                 </CardActions>
             </Card>
         </div>

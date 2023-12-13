@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 import './Navbar.css'
 // import logo from './icon.svg'
 import { Link } from 'react-router-dom';
@@ -11,6 +11,7 @@ import Home from '../../Pages/Home/Home';
 
 export default function Navbar() {
     const [username, setUsername] = useState(localStorage.getItem('user'))
+    const navigate = useNavigate()
     let greet = "";
     let time = new Date();
     if (time.getHours() >= 24 && time.getHours() < 12) {
@@ -23,6 +24,11 @@ export default function Navbar() {
         greet = "Good evening";
     }
 
+    const handleLogout = () => {
+        localStorage.clear()
+        navigate('/')
+    }
+
     return (
         <header className='nav-bar'>
             <div class="oD">
@@ -31,7 +37,7 @@ export default function Navbar() {
                     <div>
                         <p>{greet}, {username}</p>
                         {/* <br /> */}
-                        <a href='/'><span class="material-symbols-outlined">
+                        <a href='/' onClick={handleLogout}><span class="material-symbols-outlined">
                             logout
                         </span></a>
                     </div>

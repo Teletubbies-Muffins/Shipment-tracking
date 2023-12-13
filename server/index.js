@@ -12,6 +12,7 @@ server.use(cors(corsOptions));
 mongoose.connect(
   "mongodb+srv://fahad:Helpme2000@cluster0.1by5gyl.mongodb.net/shipment"
 );
+mongoose.set("strictQuery", false);
 server.use(express.json());
 
 server.get("/", (req, res) => {

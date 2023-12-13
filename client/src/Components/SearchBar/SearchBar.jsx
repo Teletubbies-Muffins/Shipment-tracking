@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { Axios } from '../Axios/Axios'
 
 export default function SearchBar({ handleSetErr }) {
-    const [shipment_id, setShipment_id] = useState()
+    // const [shipment_id, setShipment_id] = useState()
     const navigate = useNavigate()
     const handleSearch = () => {
         handleSetErr(false)
@@ -14,9 +14,8 @@ export default function SearchBar({ handleSetErr }) {
             navigate('/shipment/' + searchBar.value)
         }).catch((err) => {
             console.log(err)
+            alert("errpr")
             handleSetErr("Shipment not found")
-            searchBar.style.color = 'red'
-
 
         })
     }
