@@ -9,12 +9,12 @@ export default function SearchBar({ handleSetErr }) {
     const handleSearch = () => {
         handleSetErr(false)
         const searchBar = document.getElementById('search_bar')
-        // alert(shipment_id)
+
         Axios.get('shipment/shipment-details/' + searchBar.value).then((res) => {
             navigate('/shipment/' + searchBar.value)
         }).catch((err) => {
             console.log(err)
-            alert("errpr")
+
             handleSetErr("Shipment not found")
 
         })

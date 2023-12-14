@@ -16,13 +16,13 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<Landing />} path="/" />
+          <Route element={<SignUp />} path="/sign-up" />
+          <Route element={<ShipmentDetails />} path="/shipment/:sh_id" />
           <Route element={<PrivateRoutes />}>
-            <Route element={<ShipmentDetails />} path="/shipment/:sh_id" />
             <Route element={<Home />} path="/home" />
             <Route element={<Home />} path="*" />
-            <Route element={<SignUp />} path="/sign-up" />
-            <Route path="/about" element={<About />}></Route>
             <Route path="/shipments" element={<Shipments />}></Route>
+            <Route path="/about" element={<About />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

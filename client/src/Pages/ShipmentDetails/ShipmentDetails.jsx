@@ -14,9 +14,9 @@ export default function ShipmentDetails() {
     const { sh_id } = useParams()
     const getShipmentDetails = () => {
         Axios.get(`/shipment/shipment-details/${sh_id}`).then((res) => {
-            // alert("get")
+
             setShipment(res.data)
-            // console.log(res.data)
+
         }).catch((err) => {
             console.log(err.data)
         })
@@ -43,7 +43,7 @@ export default function ShipmentDetails() {
 
     const handleDeleteShipment = () => {
         Axios.delete('/shipment/' + Shipment._id).then((res) => {
-            alert("Shipment Deleted")
+
             navigate('/home')
         }).catch((err) => {
             setMsg("Error when deleting try again")
@@ -54,8 +54,7 @@ export default function ShipmentDetails() {
 
     const handleMarkDone = () => {
         Axios.put('/shipment/' + Shipment._id).then((res) => {
-            alert("Shipment marked done")
-            // navigate('/home')
+
         }).catch((err) => {
             setMsg("Error when deleting try again")
             console.log(err)
@@ -68,7 +67,7 @@ export default function ShipmentDetails() {
 
     return (
         <>
-            <Navbar />
+            {localStorage.getItem('user') && <Navbar />}
             <div className='shipment-details-page'>
                 {/* ShipmentDetails */}
                 {/* <div> */}
@@ -78,14 +77,14 @@ export default function ShipmentDetails() {
                     <p>description: {Shipment.description}</p>
                     <p>Estimated arrival date {GetFullDate(Shipment.arrivalTime)}</p>
                     <hr />
-                    <div className='action-box'>
+                    {localStorage.getItem('user') && <div className='action-box'>
                         <button className='btn btn-secondary ' onClick={handleUpdateButtonClicked}>Update Shipment Status</button>
                         <button className='btn btn-danger ' onClick={handleDeleteShipment}>Delete</button>
                         {!Shipment.done &&
                             <button className='btn btn-success ' onClick={handleMarkDone} >Mark Done</button>
                         }
 
-                    </div>
+                    </div>}
                     <hr />
                 </div>
                 <div item className='form-container' id="form-container">
