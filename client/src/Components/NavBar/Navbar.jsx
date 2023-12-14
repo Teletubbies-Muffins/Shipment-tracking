@@ -43,7 +43,7 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                <div class="iD">
+                {/* <div class="iD">
 
                     <br />
                     <a href="#" class="linksM"> Track package</a><br /><br />
@@ -51,7 +51,7 @@ export default function Navbar() {
                     <Link to="/reg" class="linksM"> Register</Link><br /><br />
                     <Link to="/blog" class="linksM"> Blog</Link><br /><br />
 
-                </div>
+                </div> */}
             </div>
 
             {/*Nav*/}

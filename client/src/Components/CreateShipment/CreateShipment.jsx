@@ -70,9 +70,8 @@ export default function CreateShipment() {
 
         </Grid>
         <Grid item sm={12} xs={12} md={12} className="form-container">
-          <form action="" onSubmit={handleNewShipment} id="form">
-            {/* <FormLabel className='label '>From</FormLabel> */}
-            {/* <TextField size='small' name='from' className='input'></TextField> */}
+          {/* <form action="" onSubmit={handleNewShipment} id="form">
+
             <FormLabel className='label'>To</FormLabel>
             <TextField size='small' name='to' className='input'></TextField>
             <FormLabel className='label'>Description</FormLabel>
@@ -82,6 +81,13 @@ export default function CreateShipment() {
             <input size='small' name='arrivalTime' type='date' className='input'></input>
             <hr style={{ color: "black" }} />
             <Button variant='outlined' type="submit">Create</Button>
+          </form> */}
+          <form class="form" id="form" onSubmit={handleNewShipment}>
+            <div class="title">Contact us</div>
+            <input type="text" placeholder="Your email" class="input" name='to' />
+            <textarea placeholder="Your message" name="description"></textarea>
+            <input type="date" name="arrivalTime" id="" />
+            <button>Submit</button>
           </form>
 
 
