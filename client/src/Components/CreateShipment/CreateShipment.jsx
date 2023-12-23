@@ -84,8 +84,9 @@ export default function CreateShipment() {
           </form> */}
           <form class="form" id="form" onSubmit={handleNewShipment}>
             <div class="title">Contact us</div>
-            <input type="text" placeholder="Your email" class="input" name='to' />
-            <textarea placeholder="Your message" name="description"></textarea>
+            <input type="text" placeholder="to" class="input" name='to' />
+            <textarea placeholder="description" name="description"></textarea>
+            <label htmlFor="">estimated arrival date</label>
             <input type="date" name="arrivalTime" id="" />
             <button>Submit</button>
           </form>

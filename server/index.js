@@ -15,10 +15,6 @@ mongoose.connect(
 mongoose.set("strictQuery", false);
 server.use(express.json());
 
-server.get("/", (req, res) => {
-  console.log("response");
-  res.send("get");
-});
 
 const userRouter = require("./routes/user.js");
 server.use("/user", userRouter);
