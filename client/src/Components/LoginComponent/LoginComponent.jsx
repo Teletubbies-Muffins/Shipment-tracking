@@ -9,7 +9,7 @@ export default function LoginComponent({ handleLogin, ErrorMsg }) {
                     <p className='text-warning '>{ErrorMsg}</p>
                     <input class="form-content" type="text" placeholder="UserName" name='username' />
                     <input class="form-content" type="password" placeholder="PassWord" name="password" />
-                    <button type='submit'>Continue</button>
+                    <button type='submit'>Login</button>
                 </form>
 
                 <div id="rays">
