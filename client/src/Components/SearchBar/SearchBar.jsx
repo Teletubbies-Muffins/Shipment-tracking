@@ -24,7 +24,7 @@ export default function SearchBar({ handleSetErr }) {
 
             <input id="search_bar" placeholder="Shipment ID..." type="text" />
 
-            <button type="submit" onClick={handleSearch}>Go</button>
+            <button type="submit" onClick={handleSearch}>Search</button>
 
         </div>
 
