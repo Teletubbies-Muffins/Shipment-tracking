@@ -10,7 +10,7 @@ const corsOptions = {
 server.use(cors(corsOptions));
 
 mongoose.connect(
-  "mongodb+srv://fahad:Helpme2000@cluster0.1by5gyl.mongodb.net/shipment"
+  "mongodb+srv://<username>:<password>@cluster0.1by5gyl.mongodb.net/<database>"
 );
 mongoose.set("strictQuery", false);
 server.use(express.json());
